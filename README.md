@@ -36,10 +36,10 @@ Then, you can run Ivan with the following commend on CLI.
 
 Tweets that passed final determination are archived in tweet_data.csv (the file name can be edited in the configuration part) with mata-data including user id, user name, tweet address, tweet text, image url and GPS coordinates (if any). The following are some screeshots of tweets collected by the Ivan agent.
 
-<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6611.jpg" width="230">
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6611.jpg" width="260">
 
-<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6613.jpg" width="230">
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6613.jpg" width="260">
 
-<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6615.jpg" width="230">
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6615.jpg" width="260">
 
-<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6617.jpg" width="230">
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6617.jpg" width="260">
