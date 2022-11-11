@@ -34,4 +34,12 @@ Then, you can run Ivan with the following commend on CLI.
 
 ## Results
 
-<iframe><blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Ukrainian?src=hash&amp;ref_src=twsrc%5Etfw">#Ukrainian</a> Paratroopers won a <a href="https://twitter.com/hashtag/T80BVM?src=hash&amp;ref_src=twsrc%5Etfw">#T80BVM</a> tank.<br><br>Glory to the <a href="https://twitter.com/hashtag/DSHV?src=hash&amp;ref_src=twsrc%5Etfw">#DSHV</a>, Glory to the <a href="https://twitter.com/hashtag/ZSU?src=hash&amp;ref_src=twsrc%5Etfw">#ZSU</a>!!!<br><br>Video: <a href="https://twitter.com/hashtag/OleksandrPogrebyskyi?src=hash&amp;ref_src=twsrc%5Etfw">#OleksandrPogrebyskyi</a> <a href="https://t.co/vJFdQZBiL4">pic.twitter.com/vJFdQZBiL4</a></p>&mdash; Lientjie 👑 (@news_globally) <a href="https://twitter.com/news_globally/status/1588905709714169856?ref_src=twsrc%5Etfw">November 5, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></iframe>
+Tweets that passed final determination are archived in tweet_data.csv (the file name can be edited in the configuration part) with mata-data including user id, user name, tweet address, tweet text, image url and GPS coordinates (if any). The following are some screeshots of tweets collected by the Ivan agent.
+
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6611.jpg" width="230">
+
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6613.jpg" width="230">
+
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6615.jpg" width="230">
+
+<img src="https://github.com/nomalee/Ivan/blob/master/images/IMG_6617.jpg" width="230">
