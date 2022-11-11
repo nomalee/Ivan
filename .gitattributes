@@ -1,2 +1,0 @@
-tankbuster/downloads/tankbuster_conv_weights.h5 filter=lfs diff=lfs merge=lfs -text
-tankbuster/downloads/tankbuster_res_weights.h5 filter=lfs diff=lfs merge=lfs -text
