@@ -2,7 +2,7 @@
 
 Ivan is a Twitter agent that collects and analyzes live tweets, automatically recognizing tweets relevant to the Russo-Ukrainian war.
 
-Forked from tankbuster, a deep learning engine trained to detect Russia-made MBTs (such as the T-72) and BMTs, Ivan also collects tweet texts and identifies whether they are related to the military domain using NLP (Natural Language Processing) technology. As well as English, Ivan supports 133 different languages including Russian and Ukrainan as Google Translate does.
+Forked from [tankbuster](https://github.com/thiippal/tankbuster), a deep learning engine trained to detect Russia-made MBTs (such as the T-72) and BMTs, Ivan also collects tweet texts and identifies whether they are related to the military domain using NLP (Natural Language Processing) technology. As well as English, Ivan supports 133 different languages including Russian and Ukrainan as Google Translate does.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Ivan requires the following libraries to run the code.
 - numpy v1.23.4
 - pandas v1.5.1
 
-Other libraries may be required. You can refer to the [tankbuster]([url](https://github.com/thiippal/tankbuster)) repository for checking out the libraries required by tankbuster.
+Other libraries may be required. You can refer to the [tankbuster](https://github.com/thiippal/tankbuster) repository for checking out the libraries required by [tankbuster](https://github.com/thiippal/tankbuster).
 
 ## Usage
 
