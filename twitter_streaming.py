@@ -13,8 +13,9 @@ import csv
 import numpy as np
 from classify_tweets import *
 
-BEARER_TOKEN = 'Put Your BEAR_TOKEN here'
+BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAAfsggEAAAAAeAn2S6iLPXOESLxTm%2BzfIwZsvO0%3DEyD7sWM3vL9MLZ33lwif34QRxZzcfH0DzYNZQb5XoRxeXLhFpz'
 csv_file_name = 'tweet_data.csv'
+filtering_rule = 'has:media Ukraine OR Kherson OR War OR tank OR танк'
 
 #inherites tweepy.StreamClient
 class TwitterStream(tweepy.StreamingClient):
@@ -22,7 +23,7 @@ class TwitterStream(tweepy.StreamingClient):
         
         try:
             detectBody(raw_data)
-            time.sleep(5)
+            #time.sleep(5)
         except BaseException as err:
             print("Something happend: ", err)
 
@@ -136,7 +137,7 @@ rules = streamClient.get_rules()
 delete_all_rules(rules)
 
 # 스트림 규칙 추가
-streamClient.add_rules(tweepy.StreamRule(value='has:media has:geo Ukraine OR tank OR танк'))
+streamClient.add_rules(tweepy.StreamRule(value=filtering_rule))
 
 # 스트림 시작
 streamClient.filter(tweet_fields=['geo','context_annotations','created_at'], user_fields='description', media_fields=['preview_image_url,url'],
