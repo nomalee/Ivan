@@ -13,7 +13,7 @@ import csv
 import numpy as np
 from classify_tweets import *
 
-BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAAfsggEAAAAAeAn2S6iLPXOESLxTm%2BzfIwZsvO0%3DEyD7sWM3vL9MLZ33lwif34QRxZzcfH0DzYNZQb5XoRxeXLhFpz'
+BEARER_TOKEN = 'Put your BARER_TOKEN here'
 csv_file_name = 'tweet_data.csv'
 filtering_rule = 'has:media Ukraine OR Kherson OR War OR tank OR танк'
 
