@@ -13,6 +13,9 @@ import csv
 import numpy as np
 from classify_tweets import *
 
+BEARER_TOKEN = 'Put Your BEAR_TOKEN here'
+csv_file_name = 'tweet_data.csv'
+
 #inherites tweepy.StreamClient
 class TwitterStream(tweepy.StreamingClient):
     def on_data(self, raw_data):
@@ -25,9 +28,7 @@ class TwitterStream(tweepy.StreamingClient):
 
 def detectBody(raw_data):
 
-    global tweet_info_df
-    media_url = None
-    csv_file_name = 'tweet_data.csv'
+    media_url = None    
     data = json.loads(raw_data)
     coordinates_list = None
     coordinates = ''
@@ -126,8 +127,7 @@ def delete_all_rules(rules):
 tweet_info_df = pd.DataFrame()
 
 # 스트림 클라이언트 인스터턴스 생성
-streamClient = TwitterStream('AAAAAAAAAAAAAAAAAAAAAAfsggEAAAAAeAn2S6iLPXOESLxTm%2BzfIwZsvO0%3DEyD7sWM3vL9MLZ33lwif34QRxZzcfH0DzYNZQb5XoRxeXLhFpz')
-#client = tweepy.Client(bearer_token='AAAAAAAAAAAAAAAAAAAAAAfsggEAAAAAeAn2S6iLPXOESLxTm%2BzfIwZsvO0%3DEyD7sWM3vL9MLZ33lwif34QRxZzcfH0DzYNZQb5XoRxeXLhFpz')
+streamClient = TwitterStream(BEARER_TOKEN)
 
 # 모든 규칙 불러오기 - id값을 지정하지 않으면 모든 규칙을 불러옴
 rules = streamClient.get_rules()
