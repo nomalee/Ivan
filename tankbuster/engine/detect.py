@@ -1,8 +1,11 @@
 # Import the necessary packages
+import tensorflow as tf
 import numpy as np
-from .. import cnn
-from keras.applications.resnet50 import preprocess_input
-from keras.preprocessing.image import load_img, img_to_array
+#from .. import nets as cnn
+import tankbuster.cnn.nets as cnn
+
+from tensorflow.keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from keras.utils.data_utils import get_file
 
 """
@@ -71,7 +74,7 @@ def bust(image, network):
             model.load_weights(weights)
 
             # Return the prediction
-            predictions = model.predict(normalized, verbose=0)[0]
+            predictions = model.predict_step(normalized, verbose=0)[0]
 
             # Create a dictionary of predictions
             label_probs = {'bmp': (predictions[0]),
@@ -97,7 +100,8 @@ def bust(image, network):
             top_model.load_weights(weights)
 
             # Return the prediction
-            predictions = top_model.predict(features, verbose=0)[0]
+            #predictions = top_model.predict(features, verbose=0)[0]
+            predictions = top_model.predict_step(features)[0]
 
             # Create a dictionary of predictions
             label_probs = {'bmp': (predictions[0]),

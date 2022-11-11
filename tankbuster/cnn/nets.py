@@ -81,7 +81,7 @@ class CNNArchitecture:
     @staticmethod
     def ResNet(imgrows, imgcols, numchannels):
         # Initialize model without pre-trained weights
-        resnet = ResNet50(include_top=False,
+        resnet = ResNet50(include_top=True,
                           input_tensor=Input(shape=(imgrows,
                                                     imgcols,
                                                     numchannels)))
