@@ -12,11 +12,11 @@ Ivan can be installed by cloning the repository. To do so, enter the following c
 
 Ivan requires the following libraries to run the code.
 
-- PyTorch v.1.13.0
-- BERT v.4.24.0
-- googletrans v.3.1.0a0
-- numpy v.1.23.4
-- pandas v.1.5.1
+- PyTorch v1.13.0
+- BERT v4.24.0
+- googletrans v3.1.0a0
+- numpy v1.23.4
+- pandas v1.5.1
 
 Other libaries may be required. You can refer to the [tankbuster]([url](https://github.com/thiippal/tankbuster)) repository for checking out the libraries required by tankbuster.
 
