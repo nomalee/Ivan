@@ -1,6 +1,6 @@
 # Ivan
 
-Ivan is a Twitter agent that collects and analyzes live tweets, automatically recognizing tweets relevant to the Russo-Ukraine war.
+Ivan is a Twitter agent that collects and analyzes live tweets, automatically recognizing tweets relevant to the Russo-Ukrainian war.
 
 Forked from tankbuster, a deep learning engine trained to detect Russia-made MBTs (such as the T-72) and BMTs, Ivan also collects tweet texts and identifies whether they are related to the military domain using NLP (Natural Language Processing) technology.
 
