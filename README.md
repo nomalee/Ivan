@@ -18,7 +18,7 @@ Ivan requires the following libraries to run the code.
 - numpy v1.23.4
 - pandas v1.5.1
 
-Other libaries may be required. You can refer to the [tankbuster]([url](https://github.com/thiippal/tankbuster)) repository for checking out the libraries required by tankbuster.
+Other libraries may be required. You can refer to the [tankbuster]([url](https://github.com/thiippal/tankbuster)) repository for checking out the libraries required by tankbuster.
 
 ## Usage
 
