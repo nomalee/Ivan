@@ -10,6 +10,16 @@ Ivan can be installed by cloning the repository. To do so, enter the following c
 
 <code>git clone https://github.com/nomalee/Ivan.git</code>
 
+Ivan requires the following libraries to run the code.
+
+- PyTorch v.1.13.0
+- BERT v.4.24.0
+- googletrans v.3.1.0a0
+- numpy v.1.23.4
+- pandas v.1.5.1
+
+Other libaries may be required. You can refer to the [tankbuster]([url](https://github.com/thiippal/tankbuster)) repository for checking out the libraries required by tankbuster.
+
 ## Usage
 
 Before running Ivan, you need to edit the configuration part in twitter_streaming.py. A bearer token can be claimed from Twitter.
