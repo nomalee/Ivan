@@ -14,6 +14,7 @@ Ivan requires the following libraries to run the code.
 
 - PyTorch v1.13.0
 - BERT v4.24.0
+- tweepy v4.12.1
 - googletrans v3.1.0a0
 - numpy v1.23.4
 - pandas v1.5.1
@@ -22,13 +23,15 @@ Other libraries may be required. You can refer to the [tankbuster](https://githu
 
 ## Usage
 
-Before running Ivan, you need to edit the configuration part in twitter_streaming.py. A bearer token can be claimed from Twitter.
+Please note that Ivan uses Twitter API v2, therefore, all the names and syntax related to Twitter API hereafter are applied accordingly. Before running Ivan, you need to edit the configuration part in twitter_streaming.py. A bearer token can be claimed from Twitter.
 
-<code>
-  BEARER_TOKEN = 'Put Your BEAR_TOKEN here'
-</code>
+<code>BEARER_TOKEN = 'Put Your BEAR_TOKEN here'</code>
 
-Then, you can run Ivan with the following commend on CLI.
+In addition, it is recommended to edit the filtering rule in the same configuration part for better results in the initial filtering phase:
+
+<code>filtering_rule = 'has:media Ukraine OR Kherson OR War OR tank OR танк'</code>
+
+A paid subscription to Twitter provides a wider range of filtering options. You can cansult [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api) for a better understanding of Twitter's subscription plans and filtering options. Then, you can run Ivan with the following commend on CLI.
 
 <code>python ./twitter_streaming.py</code>
 
